@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useStore } from './hooks';
+import { Table } from './components';
 
-function App() {
+export const App = () => {
+  const store = useStore();
+
+  const totalPrice = Object.values(store)
+    .reduce((arr, current) => arr.concat(current), [])
+    .reduce((accum, { price, value }) => accum + price * (value || 1), 0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {Object.entries(store).map(([title, data], index) => (
+        <Table key={index} title={title} data={data} />
+      ))}
+      <h2>Итого: {totalPrice.toLocaleString('ru-RU')} руб.</h2>
     </div>
   );
-}
-
-export default App;
+};
