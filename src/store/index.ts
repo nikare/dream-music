@@ -59,6 +59,51 @@ const initialState: IState = {
       price: 189900,
       value: 1,
     },
+    {
+      title: 'AudioQuest NRG-Z3 1.0m',
+      category: 'Силовой кабель',
+      price: 19390,
+      value: 3,
+    },
+    {
+      title: 'AudioQuest HDMI Cinnamon 48G Braid 1.5m',
+      category: 'HDMI кабель',
+      price: 14290,
+    },
+    {
+      title: 'AudioQuest HDMI Cinnamon 48G Braid 0.6m',
+      category: 'HDMI кабель',
+      price: 11190,
+    },
+    {
+      title: 'AudioQuest Golden Gate 3.5M-3.5M, 2.0 м',
+      category: 'Межблочный кабель',
+      price: 7990,
+    },
+    {
+      title: 'NorStone Jura Spade Connector',
+      category: 'Разъёмы для акустического кабеля',
+      price: 4800,
+      value: 7,
+    },
+    {
+      title: 'NorStone Banana Plugs BLS500',
+      category: 'Разъёмы для акустического кабеля',
+      price: 4800,
+      value: 4,
+    },
+    {
+      title: 'AudioQuest Rocket 33 Braided 1.0m',
+      category: 'Акустический кабель',
+      price: 3490,
+      value: 51,
+    },
+    {
+      title: 'AudioQuest SBW-Rocket 33',
+      category: 'Термоусадочные штаны',
+      price: 1690,
+      value: 7,
+    },
   ],
 
   'Стерео мечты': [
@@ -77,6 +122,40 @@ const initialState: IState = {
       category: 'Сетевой фильтр',
       price: 93900,
       value: 1,
+    },
+    {
+      title: 'AudioQuest NRG-Z3 1.0m',
+      category: 'Силовой кабель',
+      price: 19390,
+    },
+    {
+      title: 'AudioQuest Golden Gate 3.5M-3.5M, 2.0 м',
+      category: 'Межблочный кабель',
+      price: 7990,
+    },
+    {
+      title: 'NorStone Jura Spade Connector',
+      category: 'Разъёмы для акустического кабеля',
+      price: 4800,
+      value: 2,
+    },
+    {
+      title: 'NorStone Banana Plugs BLS500',
+      category: 'Разъёмы для акустического кабеля',
+      price: 4800,
+      value: 2,
+    },
+    {
+      title: 'AudioQuest Rocket 33 Braided 1.0m',
+      category: 'Акустический кабель',
+      price: 3490,
+      value: 5,
+    },
+    {
+      title: 'AudioQuest SBW-Rocket 33',
+      category: 'Термоусадочные штаны',
+      price: 1690,
+      value: 2,
     },
   ],
 };
