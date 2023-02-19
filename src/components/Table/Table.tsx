@@ -1,6 +1,6 @@
 import { RootState } from '../../store';
 
-const HEADING = ['№', 'Наименование', 'Описание товара', 'Цена', 'Количество', 'Сумма'];
+const HEADING = ['№', 'Наименование', 'Описание товара', 'Цена'];
 
 interface IProps {
   title: string;
@@ -10,7 +10,8 @@ interface IProps {
 export const Table = (props: IProps) => {
   const { title, data } = props;
 
-  const totalPrice = data.reduce((accum, { price, value }) => accum + price * (value || 1), 0);
+  const totalPrice = data.reduce((accum, { price }) => accum + price, 0);
+  const dataSorted = [...data].sort((a, b) => Number(a.complete) - Number(b.complete));
 
   return (
     <table className="pure-table">
@@ -23,14 +24,12 @@ export const Table = (props: IProps) => {
         </tr>
       </thead>
       <tbody>
-        {data.map(({ title, category, price, value = 1 }, index) => (
-          <tr key={index}>
+        {dataSorted.map(({ title, category, price, complete }, index) => (
+          <tr className={complete ? 'done' : ''} key={index}>
             <td>{index + 1}</td>
             <td>{title}</td>
             <td>{category}</td>
-            <td>{price.toLocaleString('ru-RU')} руб.</td>
-            <td>{value} шт.</td>
-            <td>{(price * value).toLocaleString('ru-RU')} руб.</td>
+            <td>{price.toLocaleString('ru-RU')}&nbsp;руб.</td>
           </tr>
         ))}
       </tbody>

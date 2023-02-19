@@ -6,7 +6,7 @@ export const App = () => {
 
   const totalPrice = Object.values(store)
     .reduce((arr, current) => arr.concat(current), [])
-    .reduce((accum, { price, value }) => accum + price * (value || 1), 0);
+    .reduce((accum, { price }) => accum + price, 0);
 
   return (
     <div className="app">

@@ -21,6 +21,10 @@ h2 {
   width: 100%;
 }
 
+.pure-table tr:nth-child(even) {
+  background: #f3f3f3;
+}
+
 .pure-table th {
   font-size: 14px;
 }
@@ -43,42 +47,32 @@ h2 {
 
 td:nth-child(1),
 th:nth-child(1) {
-  width: 5%;
-  max-width: 5%;
-  min-width: 5%;
+  width: 2%;
+  max-width: 2%;
+  min-width: 2%;
 }
 
 td:nth-child(2),
 th:nth-child(2) {
-  width: 27.5%;
-  max-width: 27.5%;
-  min-width: 27.5%;
+  width: 44%;
+  max-width: 44%;
+  min-width: 44%;
 }
 
 td:nth-child(3),
 th:nth-child(3) {
-  width: 35%;
-  max-width: 35%;
-  min-width: 35%;
+  width: 44%;
+  max-width: 44%;
+  min-width: 44%;
 }
 
 td:nth-child(4),
 th:nth-child(4) {
-  width: 12.5%;
-  max-width: 12.5%;
-  min-width: 12.5%;
+  width: 10%;
+  max-width: 10%;
+  min-width: 10%;
 }
 
-td:nth-child(5),
-th:nth-child(5) {
-  width: 7.5%;
-  max-width: 7.5%;
-  min-width: 7.5%;
-}
-
-td:nth-child(6),
-th:nth-child(6) {
-  width: 12.5%;
-  max-width: 12.5%;
-  min-width: 12.5%;
+.done {
+  text-decoration: line-through;
 }
