@@ -1,6 +1,6 @@
 import { RootState } from '../../store';
 
-const HEADING = ['№', 'Наименование', 'Описание товара', 'Цена'];
+const HEADING = ['№', 'Наименование', 'Описание товара', 'Цена', 'Где купить'];
 
 interface IProps {
   title: string;
@@ -24,12 +24,17 @@ export const Table = (props: IProps) => {
         </tr>
       </thead>
       <tbody>
-        {dataSorted.map(({ title, category, price, complete }, index) => (
+        {dataSorted.map(({ title, category, price, complete, link }, index) => (
           <tr className={complete ? 'done' : ''} key={index}>
             <td>{index + 1}</td>
             <td>{title}</td>
             <td>{category}</td>
             <td>{price.toLocaleString('ru-RU')}&nbsp;руб.</td>
+            <td>
+              <a href={link} className="link" target="_blank" rel="noreferrer">
+                Ссылка
+              </a>
+            </td>
           </tr>
         ))}
       </tbody>
