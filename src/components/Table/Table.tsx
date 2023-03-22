@@ -11,7 +11,9 @@ export const Table = (props: IProps) => {
   const { title, data } = props;
 
   const totalPrice = data.reduce((accum, { price }) => accum + price, 0);
-  const dataSorted = [...data].sort((a, b) => Number(a.complete) - Number(b.complete));
+  const dataSorted = [...data]
+    .sort((a, b) => b.price - a.price)
+    .sort((a, b) => Number(a.complete) - Number(b.complete));
 
   return (
     <table className="pure-table">

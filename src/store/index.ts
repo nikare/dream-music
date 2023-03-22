@@ -6,7 +6,7 @@ interface IState {
     category: string;
     price: number;
     complete: boolean;
-    link?: string;
+    link: string;
   }>;
 }
 
@@ -132,28 +132,28 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/kabel-pitaniya-wire-world-stratus-7-10m-stp10meu7',
     },
     {
-      title: 'Wire World Mini-Stratus 7 Power Cord',
-      category: 'Кабель питания (2 метра, для сабвуфера)',
-      price: 9800,
+      title: 'Wire World Stratus 7 Power Cord',
+      category: 'Кабель питания (1 метр, для сабвуфера)',
+      price: 17400,
       complete: false,
-      link: 'https://kaliningrad.pult.ru/product/setevoy-kabel-wire-world-mini-stratus-2-0m-sm2-0m',
+      link: 'https://kaliningrad.pult.ru/product/kabel-setevoy-wire-world-stratus-7-20m',
     },
     {
-      title: 'Wire World Oasis 8 Interconnect',
+      title: 'Wire World Oasis 8 Interconnect 0.5m',
       category: 'Межблочный аудио кабель (7 шт по 0.5 метраа, для M28)',
-      price: 7 * 14100,
+      price: 4 * 14100,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-oasis-8-interconnect-0-5m-pair--oai0-5m-8',
     },
     {
-      title: 'Wire World Oasis 8 Interconnect',
+      title: 'Wire World Oasis 8 Interconnect 0.5m',
       category: 'Межблочный аудио кабель (2 шт по 0.5 метра, для M23)',
       price: 2 * 14100,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-oasis-8-interconnect-0-5m-pair--oai0-5m-8',
     },
     {
-      title: 'Wire World Oasis 8 Interconnect',
+      title: 'Wire World Oasis 8 Interconnect 0.5m',
       category: 'Межблочный аудио кабель (2 шт по 0.5 метра, для M23)',
       price: 2 * 14100,
       complete: false,
@@ -174,6 +174,13 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/lan-kabel-wire-world-chroma-8--che1-0m-8--ethernet-cable-1-0m',
     },
     {
+      title: 'Wire World Sphere HDMI 2.0 Cable 3.0m',
+      category: 'HDMI кабель (3 метра, для Яндекс Станции Макс)',
+      price: 10600,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/hdmi-kabel-wire-world-sph3-0m-sphere-hdmi-2-0-cable-3-0m--18-g--hd-bridge',
+    },
+    {
       title: 'Wire World Sphere HDMI 2.0 Cable 2.0m',
       category: 'HDMI кабель (2 метра, для телевизора)',
       price: 8600,
@@ -188,11 +195,11 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/hdmi-kabel-wire-world-sphere-hdmi-2-0-cable-2-0m',
     },
     {
-      title: 'Wire World Pulse 3.5mm to 3.5mm 2.0m',
-      category: 'Аудио кабель Jack 3.5 - Jack 3.5 (2 метра, для Яндекс Станции)',
-      price: 4800,
+      title: 'Wire World Pulse 3.5mm to 2 RCA 3.0m',
+      category: 'Аудио кабель Jack 3.5 - 2 RCA (3 метра, для Яндекс Станции Макс)',
+      price: 5700,
       complete: false,
-      link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-pulse-3-5mm-to-3-5mm-2-0m',
+      link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-pulse-3-5mm-to-2-rca-3-0m',
     },
     {
       title: 'Wire World Oasis 8 Speaker Cable',
@@ -211,50 +218,30 @@ const initialState: IState = {
     {
       title: 'Wire World Oasis 8 Speaker Cable',
       category: 'Акустический кабель в нарезку (2 x 7.5 метров, на боковые)',
-      price: 2 * 3166 * 7.5,
+      price: 2 * 3960 * 7.5,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/akusticheskiy-kabel-wire-world-oasis-8-speaker-cable-50m-spool--oasm050-8',
     },
     {
       title: 'Wire World Oasis 8 Speaker Cable',
       category: 'Акустический кабель в нарезку (2 x 15 метров, на тыловые)',
-      price: 2 * 3166 * 15,
+      price: 2 * 3960 * 15,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/akusticheskiy-kabel-wire-world-oasis-8-speaker-cable-50m-spool--oasm050-8',
     },
     {
       title: 'Wire World Oasis 8 Speaker Cable',
-      category: 'Акустический кабель в нарезку (2 x 5 метров, на DA фронт)',
-      price: 2 * 3166 * 5,
+      category: 'Акустический кабель в нарезку (2 x 5 метров, на верхние фронтальные)',
+      price: 2 * 3960 * 5,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/akusticheskiy-kabel-wire-world-oasis-8-speaker-cable-50m-spool--oasm050-8',
     },
     {
       title: 'Wire World Oasis 8 Speaker Cable',
-      category: 'Акустический кабель в нарезку (2 x 17.5 метров, на DA тыл)',
-      price: 2 * 3166 * 17.5,
+      category: 'Акустический кабель в нарезку (2 x 17.5 метров, на верхные тыловые)',
+      price: 2 * 3960 * 17.5,
       complete: false,
-    },
-    {
-      title: 'Wire World Uni-Term Silver Spades',
-      category: 'Разъём для акустического кабеля (Комплект из 8 штук)',
-      price: 10400,
-      complete: false,
-      link: 'https://kaliningrad.pult.ru/product/wire-world-set-of-8-uni-term-silver-spades-w-sockets',
-    },
-    {
-      title: 'Wire World Uni-Term Silver Spades',
-      category: 'Разъём для акустического кабеля (Комплект из 8 штук)',
-      price: 10400,
-      complete: false,
-      link: 'https://kaliningrad.pult.ru/product/wire-world-set-of-8-uni-term-silver-spades-w-sockets',
-    },
-    {
-      title: 'Wire World Uni-Term Silver Spades',
-      category: 'Разъём для акустического кабеля (Комплект из 8 штук)',
-      price: 10400,
-      complete: false,
-      link: 'https://kaliningrad.pult.ru/product/wire-world-set-of-8-uni-term-silver-spades-w-sockets',
+      link: 'https://kaliningrad.pult.ru/product/akusticheskiy-kabel-wire-world-oasis-8-speaker-cable-50m-spool--oasm050-8',
     },
     {
       title: 'Wire World Uni-Term Silver Spades',
@@ -297,6 +284,55 @@ const initialState: IState = {
       price: 10400,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/razem-wire-world-set-of-8-uni-term-silver-bananas-w-sockets',
+    },
+    {
+      title: 'NorStone Stabbl HiFi black',
+      category: 'Подставка под аппаратуру',
+      price: 49990,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/norstone-stabbl-hifi-black',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на фронтальные)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на боковые)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на тыловые)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на верхние фронтальные)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на верхние тыловые)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
+    },
+    {
+      title: 'Wire World JUMPOAS Oasis Biwiring Jumpers (Set of 4)',
+      category: 'Перемычки Spade - Banana (на центральный)',
+      price: 12000,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/peremychki-wire-world-jumpoas-oasis-biwiring-jumpers--set-of-4---spade-to-banana',
     },
   ],
 
@@ -323,8 +359,8 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/filtr-setevoy-powergrip-yg-3',
     },
     {
-      title: 'Wire World Stratus 7 Power Cord',
-      category: 'Кабель питания (1 метр, для M28)',
+      title: 'Wire World Stratus 7 Power Cord 1.0m',
+      category: 'Кабель питания (1 метр)',
       price: 12000,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/kabel-pitaniya-wire-world-stratus-7-10m-stp10meu7',
@@ -337,11 +373,11 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/lan-kabel-wire-world-chroma-8--che1-0m-8--ethernet-cable-1-0m',
     },
     {
-      title: 'Wire World Pulse 3.5mm to 3.5mm 2.0m',
-      category: 'Аудио кабель Jack 3.5 - Jack 3.5 (2 метра, для Яндекс Станции)',
-      price: 4800,
+      title: 'Wire World Pulse 3.5mm to 2 RCA 3.0m',
+      category: 'Аудио кабель Jack 3.5 - 2 RCA (3 метра, для Яндекс Станции Мини)',
+      price: 5700,
       complete: false,
-      link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-pulse-3-5mm-to-3-5mm-2-0m',
+      link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-pulse-3-5mm-to-2-rca-3-0m',
     },
     {
       title: 'Wire World Oasis 8 Speaker Cable',
@@ -363,6 +399,13 @@ const initialState: IState = {
       price: 10400,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/razem-wire-world-set-of-8-uni-term-silver-bananas-w-sockets',
+    },
+    {
+      title: 'NorStone Stabbl HiFi black',
+      category: 'Подставка под аппаратуру',
+      price: 49990,
+      complete: false,
+      link: 'https://kaliningrad.pult.ru/product/norstone-stabbl-hifi-black',
     },
   ],
 };
