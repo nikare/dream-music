@@ -167,13 +167,6 @@ const initialState: IState = {
       link: 'https://kaliningrad.pult.ru/product/kabel-mejblochnyy-audio-wire-world-oasis-8-subwoofer-interconnect-3-0m--osw3-0m-8',
     },
     {
-      title: 'Wire World Chroma 8 Ethernet Cable 1.0м',
-      category: 'Ethernet кабель',
-      price: 10900,
-      complete: false,
-      link: 'https://kaliningrad.pult.ru/product/lan-kabel-wire-world-chroma-8--che1-0m-8--ethernet-cable-1-0m',
-    },
-    {
       title: 'Wire World Sphere HDMI 2.0 Cable 3.0m',
       category: 'HDMI кабель (3 метра, для Яндекс Станции Макс)',
       price: 10600,
@@ -364,13 +357,6 @@ const initialState: IState = {
       price: 12000,
       complete: false,
       link: 'https://kaliningrad.pult.ru/product/kabel-pitaniya-wire-world-stratus-7-10m-stp10meu7',
-    },
-    {
-      title: 'Wire World Chroma 8 Ethernet Cable 1.0м',
-      category: 'Ethernet кабель',
-      price: 10900,
-      complete: false,
-      link: 'https://kaliningrad.pult.ru/product/lan-kabel-wire-world-chroma-8--che1-0m-8--ethernet-cable-1-0m',
     },
     {
       title: 'Wire World Pulse 3.5mm to 2 RCA 3.0m',
